@@ -35,13 +35,30 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-primary">Поздравить</button>
-            </div>
+            <form action="send.php" method="post">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Имя</label>
+                        <input name="NAME" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>email</label>
+                        <input name="EMAIL" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Дата</label>
+                        <input name="DATE" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Событие</label>
+                        <input name="EVENT" type="text">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary">Поздравить</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
